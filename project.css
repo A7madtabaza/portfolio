@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f242d;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+.text {
+  color: #ffffff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  padding: 25px 9%;
+  background-color: rgb(42, 33, 103);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .logo {
+  font-size: 30px;
+  font-weight: 500PX;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  list-style: none;
+  margin-left: 35px;
+}
+
+.nav ul li a {
+  transition: 0.2s;
+}
+
+.nav ul li:hover a {
+  color: #7cf03d;
+}
+
+
+
+
+
+.cards {
+  margin-top: 10px;
+  background: url(imge/istockphoto-1616897621-640x640.jpg);
+  height: 100%;
+}
+.titel {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  margin-top: 30px;
+}
+
+.content {
+margin-top: 200px;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card{
+  background-color: white;
+  color: #1f242d;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 30px rgb(151, 148, 148);
+  transition: 1s;
+}
+.card:nth-child(odd){
+  background-color: rgb(23, 39, 122);
+  color: #1f242d;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 30px rgb(151, 148, 148);
+  transition: 1s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.info a {
+  color: black;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 10px;
+}
+.footer{
+color: white;
+background-color: rgb(42, 33, 103);
+padding: 10px;
+margin-top: 200px;
+display: flex;
+justify-content:space-between;
+align-items: center;
+
+}
+.footer span{
+color: blue;
+
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 5%;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
